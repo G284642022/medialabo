@@ -1,0 +1,10 @@
+h1{
+    color:white;
+    text-shadow: #00bfff 1px 0 10px;
+}
+table{
+    border-collapse: collapse;
+}
+th, td{
+    border: solid 1px #333;
+}
