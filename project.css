@@ -2,6 +2,9 @@ h1{
     color:white;
     text-shadow: #00bfff 1px 0 10px;
 }
+label{
+    margin-bottom:30px;
+}
 table{
     border-collapse: collapse;
 }
