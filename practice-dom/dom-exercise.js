@@ -14,12 +14,29 @@ let data = [
 //// 注意: 以上は編集しないこと!
 
 // 練習4-2 メッセージ追加プログラム
+let h2 = document.querySelector('h2#ex42'); 
+let p = document.createElement('p');
+p.textContent = '写真表と都市の緯度経度のページです';
+h2.insertAdjacentElement('afterend', p); 
+p.style.textEmphasis = 'sesame green';
 
 
 // 練習4-3 写真表作成プログラム
-
-
-// 練習4-4 箇条書き削除プログラム
+let div = document.querySelector('div#phototable'); 
+for(let i = 2;i >= 0 ;i--){ 
+let img = document.createElement('img');
+if(i == 0){
+	img.setAttribute('src', 'taro.png');
+}else if(i == 1){
+	img.setAttribute('src', 'jiro.png');
+}else if(i == 2){
+	img.setAttribute('src', 'hanako.png');
+}
+let p1 = document.createElement('p'); 
+p1.insertAdjacentElement('beforeend', img);
+div.insertAdjacentElement('afterend',p1); 
+}
+//練習4-3　箇条書き削除プログラム
 
 
 // 練習4-5 箇条書き追加プログラム
