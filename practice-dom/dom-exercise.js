@@ -34,10 +34,17 @@ if(i == 0){
 }
 let p1 = document.createElement('p'); 
 p1.insertAdjacentElement('beforeend', img);
-div.insertAdjacentElement('afterend',p1); 
+div.insertAdjacentElement('beforeend',p1); 
 }
 //練習4-3　箇条書き削除プログラム
-
+let li = document.querySelectorAll('ul#location > li');
+for(let li2 of li){
+	li2.remove();
+}
 
 // 練習4-5 箇条書き追加プログラム
-
+for(let i = 0; i < data.length;i++){
+	let list = document.createElement('li');
+	list.textContent =(`${data[i].name} ・・・ 緯度:${data[i].lat}, 経度:${data[i].lng}`);
+	document.getElementById('location').appendChild(list); 
+}
