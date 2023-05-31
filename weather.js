@@ -47,5 +47,5 @@ let data = {
 
 ////////// 課題3-2 ここからプログラムを書こう
 console.log(data.name);
-console.log(data.temp_min);
-console.log(data.temp_max);
+console.log(data.main.temp_max);
+console.log(data.main.temp_min);
