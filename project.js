@@ -46,6 +46,9 @@ let data = {
 };
 
 ////////// 課題3-2 ここからプログラムを書こう
+let n = document.querySelector('table');
+  an = data.name;
+  
 console.log(data.name);
 console.log(data.main.temp_max);
 console.log(data.main.temp_min);
