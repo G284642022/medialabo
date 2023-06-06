@@ -2,16 +2,18 @@
 <html>
    <head>
    <meta charset="utf-8">
-   <link rel="stylesheet" href="https://g284642022.github.io/medialabo/project.css">
+   <link rel="stylesheet" href="project.css">
       <title>世界の天気</title>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
     <script src="project.js"defer></script>
    </head>
   
    <body>
         <h1>世界の天気</h1>
+        <p id = "kensaku"></p>
         <form>都市のID:
-              <input type="text" name="weather.description" placeholder="IDを入力">
-            <button>ポチ</button>
+              <input type="text" name="weather" placeholder="IDを入力">
+            <button id = "poti">ポチ</button>
         </form>
         <h4>各地の天気と最高、最低気温</h4>
         <table>  
