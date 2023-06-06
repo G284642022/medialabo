@@ -5,7 +5,7 @@ ten.addEventListener('click',sendRequest);
 // 通信を開始する処理
 function sendRequest() {
     // URL を設定
-    let a = document.querySelector('input[name="weather"]');
+    let a = document.querySelector('select[name="weather"]');
     let id = parseInt(a.value);
     let url = 'https://www.nishita-lab.org/web-contents/jsons/openweather/'+id+'.json';
 
@@ -26,8 +26,8 @@ function showResult(resp) {
         data = JSON.parse(data);
     }
 
-    let ken = document.querySelector('p#kensaku');
-    kensaku.textContent = data.name+'の天気は'+data.main.weather.description+'です。'+ '最高気温は'+data.main.temp_max+'°です。最低気温は'+data.main.temp_min+'°です。'
+    let ken = document.querySelector('p#sentaku');
+    sentaku.textContent = data.name + 'の最高気温は'+data.main.temp_max+'°です。最低気温は'+data.main.temp_min+'°です。';
 }
 // 通信エラーが発生した時の処理
 function showError(err) {
