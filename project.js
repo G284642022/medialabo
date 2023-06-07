@@ -7,6 +7,7 @@ function sendRequest() {
     // URL を設定
     let a = document.querySelector('select[name="weather"]');
     let id = parseInt(a.value);
+    console.log(id);
     let url = 'https://www.nishita-lab.org/web-contents/jsons/openweather/'+id+'.json';
 
     // 通信開始
@@ -32,6 +33,8 @@ function showResult(resp) {
 // 通信エラーが発生した時の処理
 function showError(err) {
     console.log(err);
+    let senerr = document.querySelector('p#sentaku');
+    senerr.textContent = '都市が選択されていません、選択してください。'
 }
 
 // 通信の最後にいつも実行する処理
