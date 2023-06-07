@@ -6,20 +6,21 @@ h1{
 a:link {
 	color:blue;
 }
-a:vidited{
+a:visited{
 	color:green;
 }
-a:hover{
-	text-decoration:none;
-}
-h2{
 
+h2{
+	
 }
 h3{
 
 }
-p{
-
+.wake{
+	column-count: 2;
+	column-rule-style: solid ;
+	column-rule-color:white;
+	background-color:#eeeeee ;
 }
 div#zentai {
 	display: grid;
